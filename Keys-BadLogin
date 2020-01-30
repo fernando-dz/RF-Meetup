@@ -1,0 +1,31 @@
+***Settings***
+Library    AppiumLibrary
+
+***Keywords***
+
+#### Setup ####
+Launch
+    Open Application    ${REMOTE_URL}    ${APP_PACKAGE}    app=${CURDIR}/APKs/app-debug.apk    deviceName=LGH811537b1483    platformName=Android    automationName=uiautomator2    appActivity=com.T3kFit.HancockPromise.SplashActivity    appPackage=com.T3kFit.HancockPromise.Development
+    Sleep    2s
+
+#### Bad Login Data ####
+Enter Invalid Data
+	Input Text    et_hnumber    2000000
+	Sleep    1s
+	Input Text    et_firstname    Wrong    
+	Hide Keyboard
+	Input Text    et_lastname    Data
+	Hide Keyboard
+	Scroll Down Mid
+	Click Element    btn_verify
+	Wait Until Page Contains Element    com.T3kFit.HancockPromise.Development:id/tv_Message    timeout=10
+
+#### Navigation ####
+Scroll Down Mid
+	Swipe By Percent    50    70    50    30
+Scroll Up Mid
+	Swipe By Percent    50    40    50    60
+Scroll Down Large
+	Swipe By Percent    50    60    50    20
+Scroll Up Large
+	Swipe By Percent    50    40    50    90

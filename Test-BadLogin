@@ -8,8 +8,8 @@ ${PLATFORM}    Android
 ${PLATFORM_VERSION}    10
 ${DEVICE_NAME}    FA7B71A06591
 ${APP_LOCATION}    ${CURDIR}/../APKs/app-debug.apk
-${APP_ACTIVITY}    com.T3kFit.HancockPromise.SplashActivity
-${APP_PACKAGE}    com.T3kFit.HancockPromise.Development
+${APP_ACTIVITY}    com.app.name.SplashActivity
+${APP_PACKAGE}    com.app.name.Development
 ${AUTOMATION_NAME}    uiautomator2
 ${SETTINGS_PAGE}    Settings Present?
 ${UIAUTOMATOR2_SERVER_INSTALL_TIMEOUT}    50000ms

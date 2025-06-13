@@ -5,11 +5,11 @@ Resource    ${CURDIR}/../BadLogin-Keys.robot
 *** Variables ***
 ${REMOTE_URL}    http://localhost:4723/wd/hub
 ${PLATFORM}    Android
-${PLATFORM_VERSION}    10
-${DEVICE_NAME}    FA7B71A06591
+${PLATFORM_VERSION}    13
+${DEVICE_NAME}    DEVICENAME
 ${APP_LOCATION}    ${CURDIR}/../APKs/app-debug.apk
-${APP_ACTIVITY}    com.app.name.SplashActivity
-${APP_PACKAGE}    com.app.name.Development
+${APP_ACTIVITY}    com.your.app.activity
+${APP_PACKAGE}    com.your.app.package
 ${AUTOMATION_NAME}    uiautomator2
 ${SETTINGS_PAGE}    Settings Present?
 ${UIAUTOMATOR2_SERVER_INSTALL_TIMEOUT}    50000ms

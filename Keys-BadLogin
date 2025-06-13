@@ -5,7 +5,7 @@ Library    AppiumLibrary
 
 #### Setup ####
 Launch
-    Open Application    ${REMOTE_URL}    ${APP_PACKAGE}    app=${CURDIR}/APKs/app-debug.apk    deviceName=LGH811537b1483    platformName=Android    automationName=uiautomator2    appActivity=com.T3kFit.HancockPromise.SplashActivity    appPackage=com.T3kFit.HancockPromise.Development
+    Open Application    ${REMOTE_URL}    ${APP_PACKAGE}    app=${CURDIR}/APKs/app-debug.apk    deviceName=YOURDEVICENAME    platformName=Android    automationName=uiautomator2    appActivity=com.your.app.activity    appPackage=com.your.app.package
     Sleep    2s
 
 #### Bad Login Data ####
@@ -18,7 +18,7 @@ Enter Invalid Data
 	Hide Keyboard
 	Scroll Down Mid
 	Click Element    btn_verify
-	Wait Until Page Contains Element    com.T3kFit.HancockPromise.Development:id/tv_Message    timeout=10
+	Wait Until Page Contains Element    com.your.app.package:id/tv_Message    timeout=10
 
 #### Navigation ####
 Scroll Down Mid
